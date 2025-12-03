@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Patient Portal</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="dashboard">
+      <div class="main-container">
+        <!--Side bar menu-->
+        <div class="side-bar">
+          <!--Logo and a collapse icon-->
+          <div class="logo-container">
+            <div class="logo">
+              <img src="./images/Logo.png" alt="Medic Logo" />
+              <div class="logo-text">
+                <h2>MedicAlly</h2>
+              </div>
+            </div>
+
+            <div class="logo-menu-icon">
+              <span class="material-symbols-outlined">clear_all</span>
+            </div>
+          </div>
+
+          <!--Main menu-->
+          <div class="main-menu-container">
+            <div class="main-menu-heading">
+              <h3>Main Menu</h3>
+            </div>
+
+            <div class="main-menu-content">
+              <!--Dashboard-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> dashboard </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Dashboard</p>
+                  </div>
+                </div>
+
+                <div class="collapse-icon">
+                  <span class="material-symbols-outlined"
+                    >keyboard_arrow_down</span
+                  >
+                </div>
+              </div>
+
+              <!--Doctors-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> group </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Doctors</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Patients-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> groups </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Patients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Other menu-->
+          <div class="other-menu-container">
+            <div class="other-menu-heading">
+              <h3>Other Menu</h3>
+            </div>
+
+            <div class="other-menu-content">
+              <!--Doctor Schedule-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined">
+                      calendar_month
+                    </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Doctor Schedule</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Payroll-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> receipt </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Payroll</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Chat-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> chat </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Chat</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--Help & Settings-->
+          <div class="help-and-settings-container">
+            <div class="help-and-settings-heading">
+              <h3>Help & Settings</h3>
+            </div>
+
+            <div class="help-and-settings-content">
+              <!--Invoice-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined">
+                      receipt_long
+                    </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Invoice</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Settings-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> settings </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Settings</p>
+                  </div>
+                </div>
+              </div>
+
+              <!--Reports-->
+              <div class="menu-items">
+                <div class="menu-text-and-icon">
+                  <div class="menu-icon">
+                    <span class="material-symbols-outlined"> flag </span>
+                  </div>
+                  <div class="menu-text">
+                    <p>Reports</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Content area and its content-->
+        <div class="content-area">
+          <!--This consists of a search bar, icons and a profile-->
+          <div class="search-bar-and-more">
+            <div class="search-bar">
+              <form class="nosubmit">
+                <input
+                  class="nosubmit"
+                  type="search"
+                  placeholder="Search here..."
+                />
+              </form>
+            </div>
+
+            <div class="icons-and-profile">
+              <div class="icons">
+                <div class="settings-icon">
+                  <span class="material-symbols-outlined"> settings </span>
+                </div>
+                <div class="messages-icon">
+                  <span class="material-symbols-outlined"> mail </span>
+                </div>
+                <div class="notifs-icon">
+                  <span class="material-symbols-outlined"> notifications </span>
+                </div>
+              </div>
+              <div class="profile">
+                <div class="avatar">
+                  <img src="./images/doctor namjoon.jpg" alt="Doctor Namjoon" />
+                </div>
+
+                <div class="profile-info">
+                  <h2>Kim Namjoon</h2>
+                  <p>Admin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--This consists all the stats in the dashboard-->
+          <div class="dashboard-section">
+            <div class="dashboard-heading-and-breadcrumb">
+              <h2>Dashboard > <span>Admin Dashboard</span></h2>
+            </div>
+            <!--This is a welcome card with copy and cta button-->
+            <div class="hello-card">
+              <div class="text-for-card">
+                <div class="hello-heading">
+                  <h2>Good Morning, Daniel Bruk</h2>
+                </div>
+                <div class="hello-sub-heading">
+                  <p>
+                    Have a nice day at work, Lorem, ipsum dolor sit amet
+                    consectetur adipisicing.
+                  </p>
+                </div>
+                <button class="cta">Create Appointments</button>
+              </div>
+
+              <div class="illustration">
+                <img
+                  src="./images/doctor illustration.jpg"
+                  alt="illustration for the card"
+                />
+              </div>
+            </div>
+
+            <!--This consists smaller cards for appointments, new patients, operations and earnings-->
+            <div class="stats-for-appts-and-more">
+              <div class="appointments-card">
+                <div class="top-part">
+                  <div class="text-and-number">
+                    <h3>Appointments</h3>
+                    <p class="blue">250</p>
+                  </div>
+
+                  <div class="appt-card-icon">
+                    <span class="material-symbols-outlined">
+                      calendar_month
+                    </span>
+                  </div>
+                </div>
+                <div class="bottom-part">
+                  <div class="icon">
+                    <span class="material-symbols-outlined"> trending_up </span>
+                  </div>
+                  <div class="follow-text">
+                    <p><span>40%</span>vs last month</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="new-patients-card">
+                <div class="top-part">
+                  <div class="text-and-number">
+                    <h3>New Patients</h3>
+                    <p class="yellow">140</p>
+                  </div>
+
+                  <div class="new-p-card-icon">
+                    <span class="material-symbols-outlined"> person </span>
+                  </div>
+                </div>
+                <div class="bottom-part">
+                  <div class="icon">
+                    <span class="material-symbols-outlined"> trending_up </span>
+                  </div>
+                  <div class="follow-text">
+                    <p><span>20%</span>vs last month</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="operations-card">
+                <div class="top-part">
+                  <div class="text-and-number">
+                    <h3>Operations</h3>
+                    <p class="red">56</p>
+                  </div>
+
+                  <div class="ops-card-icon">
+                    <span class="material-symbols-outlined"> content_cut </span>
+                  </div>
+                </div>
+                <div class="bottom-part">
+                  <div class="icon">
+                    <span class="material-symbols-outlined">
+                      trending_down
+                    </span>
+                  </div>
+                  <div class="follow-text">
+                    <p><span>15%</span>vs last month</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="earnings-card">
+                <div class="top-part">
+                  <div class="text-and-number">
+                    <h3>Earnings</h3>
+                    <p class="green">$20.25</p>
+                  </div>
+
+                  <div class="earning-card-icon">
+                    <span class="material-symbols-outlined"> folder_copy </span>
+                  </div>
+                </div>
+                <div class="bottom-part">
+                  <div class="icon">
+                    <span class="material-symbols-outlined"> trending_up </span>
+                  </div>
+                  <div class="follow-text">
+                    <p><span>30%</span>vs last month</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--This are the statistical representations for patients visits by gender and patient department-->
+            <div class="graphs-and-bar-charts">
+              <div class="patient-visit">
+                <div class="top">
+                  <div class="first-text">
+                    <h3>Patient Visit by Gender</h3>
+                  </div>
+
+                  <div class="mini-stats">
+                    <div class="male-green">
+                      <div class="green-rectangle"></div>
+                      <p>Male 75%</p>
+                    </div>
+
+                    <div class="female-yellow">
+                      <div class="yellow-rectangle"></div>
+                      <p>Female 25%</p>
+                    </div>
+                  </div>
+
+                  <div class="date">
+                    <p>200</p>
+                    <span class="material-symbols-outlined"
+                      >keyboard_arrow_down</span
+                    >
+                  </div>
+                </div>
+
+                <div class="top-image">
+                  <img src="./images/graph.png" alt="" />
+                </div>
+              </div>
+
+              <div class="patient-dept">
+                <div class="text-for-pd">
+                  <h3>Patient Department</h3>
+                </div>
+
+                <div class="bar-graph">
+                  <img src="./images/donut graph.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <!--This has a list of top departmenys and a table for upcoming appointments-->
+            <div class="top-depts-and-upcoming-appts-tables">
+              <div class="top-departments">
+                <div class="top-dept-heading">
+                  <h2>Top Departments</h2>
+                </div>
+
+                <div class="list">
+                  <!--General Physician-->
+                  <div class="dept-list">
+                    <div class="icon-and-med-info">
+                      <div class="icon">
+                        <span class="material-symbols-outlined">
+                          stethoscope
+                        </span>
+                      </div>
+
+                      <div class="med-info-text">
+                        <h2>General Physician</h2>
+                        <p>35%</p>
+                      </div>
+                    </div>
+
+                    <div class="side-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </div>
+                  </div>
+
+                  <!--Dentist-->
+                  <div class="dept-list">
+                    <div class="icon-and-med-info">
+                      <div class="icon">
+                        <span class="material-symbols-outlined">
+                          dentistry
+                        </span>
+                      </div>
+
+                      <div class="med-info-text">
+                        <h2>Dentist</h2>
+                        <p>24%</p>
+                      </div>
+                    </div>
+
+                    <div class="side-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </div>
+                  </div>
+
+                  <!--ENT-->
+                  <div class="dept-list">
+                    <div class="icon-and-med-info">
+                      <div class="icon">
+                        <span class="material-symbols-outlined"> syringe </span>
+                      </div>
+
+                      <div class="med-info-text">
+                        <h2>ENT</h2>
+                        <p>10%</p>
+                      </div>
+                    </div>
+
+                    <div class="side-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </div>
+                  </div>
+
+                  <!--Cardiologist-->
+                  <div class="dept-list">
+                    <div class="icon-and-med-info">
+                      <div class="icon">
+                        <span class="material-symbols-outlined">
+                          cardiology
+                        </span>
+                      </div>
+
+                      <div class="med-info-text">
+                        <h2>Cardiologist</h2>
+                        <p>15%</p>
+                      </div>
+                    </div>
+
+                    <div class="side-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </div>
+                  </div>
+
+                  <!--Ophthalmology-->
+                  <div class="dept-list">
+                    <div class="icon-and-med-info">
+                      <div class="icon">
+                        <span class="material-symbols-outlined">
+                          ophthalmology
+                        </span>
+                      </div>
+
+                      <div class="med-info-text">
+                        <h2>Ophthalmology</h2>
+                        <p>20%</p>
+                      </div>
+                    </div>
+
+                    <div class="side-icon">
+                      <span class="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="upcoming-appointments">
+                <div class="top-for-upcoming-apt">
+                  <h2>Upcoming Appointments</h2>
+                  <button class="show-all-btn">Show all</button>
+                </div>
+
+                <div class="tables-for-upcomimg-appts">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>NO</th>
+                        <th>Patient Name</th>
+                        <th>Doctor</th>
+                        <th>Time</th>
+                        <th>Disease</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="checked" name="done" />
+                          <label for="checked">R00001</label>
+                        </td>
+                        <td>Andrea Lalema</td>
+                        <td>
+                          <div class="doctor-avatar-and-name">
+                            <img
+                              src="./images/doctor 4.jpg"
+                              alt="Male doctor 1"
+                            />
+
+                            <div class="doctor-name">
+                              <p>Dr.Jammy Smith</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>7:00PM</td>
+                        <td><button>Fracture</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="checked" name="done" />
+                          <label for="checked">R00002</label>
+                        </td>
+                        <td>Cristina Lalema</td>
+                        <td>
+                          <div class="doctor-avatar-and-name">
+                            <img
+                              src="./images/doctor 3.jpg"
+                              alt="Male doctor 1"
+                            />
+
+                            <div class="doctor-name">
+                              <p>Dr. Angelica Ramos</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>7:15PM</td>
+                        <td><button>Fever</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="checked" name="done" />
+                          <label for="checked">R00003</label>
+                        </td>
+                        <td>Bernado</td>
+                        <td>
+                          <div class="doctor-avatar-and-name">
+                            <img
+                              src="./images/doctor 5.jpg"
+                              alt="Male doctor 1"
+                            />
+
+                            <div class="doctor-name">
+                              <p>Dr. Martin Doe</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>7:30PM</td>
+                        <td><button>Fracture</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="checked" name="done" />
+                          <label for="checked">R00004</label>
+                        </td>
+                        <td>Galaviz Lalema</td>
+                        <td>
+                          <div class="doctor-avatar-and-name">
+                            <img
+                              src="./images/doctor 1.jpg"
+                              alt="Male doctor 3"
+                            />
+
+                            <div class="doctor-name">
+                              <p>Dr. William Jerk</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>7:50PM</td>
+                        <td><button>Fracture</button></td>
+                      </tr>
+
+                      <tr>
+                        <td>
+                          <input type="checkbox" id="checked" name="done" />
+                          <label for="checked">R00005</label>
+                        </td>
+                        <td>Cristina Groves</td>
+                        <td>
+                          <div class="doctor-avatar-and-name">
+                            <img
+                              src="./images/doctor 3.jpg"
+                              alt="female doctor 1"
+                            />
+
+                            <div class="doctor-name">
+                              <p>Dr. Angelica Ramos</p>
+                            </div>
+                          </div>
+                        </td>
+                        <td>7:55PM</td>
+                        <td><button>Fever</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <!--This are the tables for Recent Patients-->
+            <div class="recent-patients-tables"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

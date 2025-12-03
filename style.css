@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1rem;
+  border-bottom: 1px solid grey;
+  padding: 0rem 1rem 0.85rem 1rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.side-bar {
+  width: 30%;
+  max-width: 220px;
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  border-right: 1px solid grey;
+  padding-left: 0.2ren;
+}
+
+.main-menu-container,
+.other-menu-container,
+.help-and-settings-container {
+  padding: 0 0rem 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
+}
+.main-menu-content,
+.other-menu-content,
+.help-and-settings-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.search-bar-and-more {
+  padding: 1rem 2rem 0.5rem 2rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  background-color: ghostwhite;
+}
+
+.search-bar input {
+  width: 200px;
+  height: 30px;
+  background-color: rgb(231, 239, 240);
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  padding: 0.5rem 0.8rem 0.5rem 1rem;
+}
+
+input::placeholder {
+  color: rgb(31, 77, 127);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.menu-items {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+  align-items: center;
+}
+.menu-text-and-icon {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+.content-area {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  background-color: honeydew;
+}
+.dashboard-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  row-gap: 1.5rem;
+  padding-right: 2rem;
+}
+.icons-and-profile {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.settings-icon span,
+.messages-icon span,
+.notifs-icon span {
+  padding: 0.3rem;
+  color: rgb(70, 102, 160);
+  background-color: rgb(231, 239, 240);
+  border-radius: 50px;
+  font-size: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+.avatar img {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.hello-card {
+  width: 100%;
+  height: 120px;
+  background-color: darkseagreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 3rem;
+  align-items: center;
+  padding: 2rem 1.5rem 2rem 2rem;
+}
+.appointments-card,
+.new-patients-card,
+.operations-card,
+.earnings-card {
+  width: 22%;
+  height: 140px;
+  background-color: ghostwhite;
+  padding: 1.5rem 1rem 1.6rem 2rem;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+.top-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2rem;
+}
+
+.bottom-part {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+.hello-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.stats-for-appts-and-more {
+  padding: 1rem 2rem 2rem 2rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 2rem;
+}
+
+.top-depts-and-upcoming-appts-tables {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-departments {
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  padding-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.dept-list h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.graphs-and-bar-charts {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  column-gap: 2rem;
+  align-items: center;
+}
+
+.mini-stats {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.025rem;
+}
+.patient-visit img {
+  width: 350px;
+  height: 210px;
+  text-align: center;
+  object-fit: cover;
+}
+
+.dept-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-and-med-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.top-for-upcoming-apt {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 3rem;
+}
+
+.first-table {
+  width: 800px;
+  height: 40px;
+  background-color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 3rem;
+  border: 0.5px solid lightgray;
+  border-radius: 5px;
+  padding: 1rem 1.2rem;
+}
+
+.first-table p {
+  font-family: 600;
+  font-size: 1rem;
+}
+
+.tables-for-upcomimg-appts {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+td img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.doctor-avatar-and-name {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.3rem;
+  align-content: center;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ccc; /* Example border */
+}
+
+th,
+td {
+  padding: 8px 12px; /* Example padding */
+}
+
+thead th {
+  background-color: #f2f2f2; /* Example background color */
+  text-align: left; /* Align header text */
+  font-weight: bold;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9; /* Example light gray for even rows */
+}
