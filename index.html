@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hospital Patient Portal</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -223,7 +229,7 @@
             <div class="hello-card">
               <div class="text-for-card">
                 <div class="hello-heading">
-                  <h2>Good Morning, Daniel Bruk</h2>
+                  <h2>Good Morning, Kim Namjoon</h2>
                 </div>
                 <div class="hello-sub-heading">
                   <p>
@@ -232,13 +238,6 @@
                   </p>
                 </div>
                 <button class="cta">Create Appointments</button>
-              </div>
-
-              <div class="illustration">
-                <img
-                  src="./images/doctor illustration.jpg"
-                  alt="illustration for the card"
-                />
               </div>
             </div>
 
@@ -502,135 +501,222 @@
                 </div>
 
                 <div class="tables-for-upcomimg-appts">
-                  <table>
-                    <thead>
-                      <tr>
-                        <th>NO</th>
-                        <th>Patient Name</th>
-                        <th>Doctor</th>
-                        <th>Time</th>
-                        <th>Disease</th>
-                      </tr>
-                    </thead>
+                  <div class="table-responsive">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>NO</th>
+                          <th>Patient Name</th>
+                          <th>Doctor</th>
+                          <th>Time</th>
+                          <th>Disease</th>
+                        </tr>
+                      </thead>
 
-                    <tbody>
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="checked" name="done" />
-                          <label for="checked">R00001</label>
-                        </td>
-                        <td>Andrea Lalema</td>
-                        <td>
-                          <div class="doctor-avatar-and-name">
-                            <img
-                              src="./images/doctor 4.jpg"
-                              alt="Male doctor 1"
-                            />
+                      <tbody>
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check1" name="done" />
+                            <label for="check1" class="patient-id"
+                              >R00001</label
+                            >
+                          </td>
+                          <td>Andrea Lalema</td>
+                          <td>
+                            <div class="doctor-avatar-and-name">
+                              <img
+                                src="./images/doctor 4.jpg"
+                                alt="Male doctor 1"
+                              />
 
-                            <div class="doctor-name">
-                              <p>Dr.Jammy Smith</p>
+                              <div class="doctor-name">
+                                <p>Dr. Jammy Smith</p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>7:00PM</td>
-                        <td><button>Fracture</button></td>
-                      </tr>
+                          </td>
+                          <td>7:00PM</td>
+                          <td><button>Fracture</button></td>
+                        </tr>
 
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="checked" name="done" />
-                          <label for="checked">R00002</label>
-                        </td>
-                        <td>Cristina Lalema</td>
-                        <td>
-                          <div class="doctor-avatar-and-name">
-                            <img
-                              src="./images/doctor 3.jpg"
-                              alt="Male doctor 1"
-                            />
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check2" name="done" />
+                            <label for="check2" class="patient-id"
+                              >R00002</label
+                            >
+                          </td>
+                          <td>Cristina Lalema</td>
+                          <td>
+                            <div class="doctor-avatar-and-name">
+                              <img
+                                src="./images/doctor 3.jpg"
+                                alt="Female doctor 1"
+                              />
 
-                            <div class="doctor-name">
-                              <p>Dr. Angelica Ramos</p>
+                              <div class="doctor-name">
+                                <p>Dr. Angelica Ramos</p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>7:15PM</td>
-                        <td><button>Fever</button></td>
-                      </tr>
+                          </td>
+                          <td>7:15PM</td>
+                          <td><button>Fever</button></td>
+                        </tr>
 
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="checked" name="done" />
-                          <label for="checked">R00003</label>
-                        </td>
-                        <td>Bernado</td>
-                        <td>
-                          <div class="doctor-avatar-and-name">
-                            <img
-                              src="./images/doctor 5.jpg"
-                              alt="Male doctor 1"
-                            />
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check3" name="done" />
+                            <label for="check3" class="patient-id"
+                              >R00003</label
+                            >
+                          </td>
+                          <td>Bernado</td>
+                          <td>
+                            <div class="doctor-avatar-and-name">
+                              <img
+                                src="./images/doctor 5.jpg"
+                                alt="Male doctor 2"
+                              />
 
-                            <div class="doctor-name">
-                              <p>Dr. Martin Doe</p>
+                              <div class="doctor-name">
+                                <p>Dr. Martin Doe</p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>7:30PM</td>
-                        <td><button>Fracture</button></td>
-                      </tr>
+                          </td>
+                          <td>7:30PM</td>
+                          <td><button>Fracture</button></td>
+                        </tr>
 
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="checked" name="done" />
-                          <label for="checked">R00004</label>
-                        </td>
-                        <td>Galaviz Lalema</td>
-                        <td>
-                          <div class="doctor-avatar-and-name">
-                            <img
-                              src="./images/doctor 1.jpg"
-                              alt="Male doctor 3"
-                            />
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check4" name="done" />
+                            <label for="check4" class="patient-id"
+                              >R00004</label
+                            >
+                          </td>
+                          <td>Galaviz Lalema</td>
+                          <td>
+                            <div class="doctor-avatar-and-name">
+                              <img
+                                src="./images/doctor 1.jpg"
+                                alt="Male doctor 3"
+                              />
 
-                            <div class="doctor-name">
-                              <p>Dr. William Jerk</p>
+                              <div class="doctor-name">
+                                <p>Dr. William Jerk</p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>7:50PM</td>
-                        <td><button>Fracture</button></td>
-                      </tr>
+                          </td>
+                          <td>7:50PM</td>
+                          <td><button>Fracture</button></td>
+                        </tr>
 
-                      <tr>
-                        <td>
-                          <input type="checkbox" id="checked" name="done" />
-                          <label for="checked">R00005</label>
-                        </td>
-                        <td>Cristina Groves</td>
-                        <td>
-                          <div class="doctor-avatar-and-name">
-                            <img
-                              src="./images/doctor 3.jpg"
-                              alt="female doctor 1"
-                            />
+                        <tr>
+                          <td>
+                            <input type="checkbox" id="check5" name="done" />
+                            <label for="check5" class="patient-id"
+                              >R00005</label
+                            >
+                          </td>
+                          <td>Cristina Groves</td>
+                          <td>
+                            <div class="doctor-avatar-and-name">
+                              <img
+                                src="./images/doctor 3.jpg"
+                                alt="Female doctor 2"
+                              />
 
-                            <div class="doctor-name">
-                              <p>Dr. Angelica Ramos</p>
+                              <div class="doctor-name">
+                                <p>Dr. Angelica Ramos</p>
+                              </div>
                             </div>
-                          </div>
-                        </td>
-                        <td>7:55PM</td>
-                        <td><button>Fever</button></td>
-                      </tr>
-                    </tbody>
-                  </table>
+                          </td>
+                          <td>7:55PM</td>
+                          <td><button>Fever</button></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!--This are the tables for Recent Patients-->
-            <div class="recent-patients-tables"></div>
+            <div class="recent-patients-tables card-container">
+              <div class="top-for-recent-pts">
+                <h2>Recent Patients</h2>
+                <button class="show-all-btn">Show all</button>
+              </div>
+              <div class="table-responsive">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Patient Name</th>
+                      <th>Age</th>
+                      <th>Date of Birth</th>
+                      <th>Diagnosis</th>
+                      <th>Triage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><span class="patient-id">P0023</span></td>
+                      <td>
+                        <div class="patient-avatar-and-name">
+                          <img src="./images/doctor 2.jpg" alt="Patient 1" />
+                          <p>Alexander Grahams</p>
+                        </div>
+                      </td>
+                      <td>34</td>
+                      <td>12/05/1989</td>
+                      <td>Asthma</td>
+                      <td><span class="badge non-urgent">Non Urgent</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="patient-id">P0024</span></td>
+                      <td>
+                        <div class="patient-avatar-and-name">
+                          <img src="./images/doctor 3.jpg" alt="Patient 2" />
+                          <p>Felicia Hardy</p>
+                        </div>
+                      </td>
+                      <td>28</td>
+                      <td>22/08/1995</td>
+                      <td>Migraine</td>
+                      <td>
+                        <span class="badge out-patient">Out Patient</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><span class="patient-id">P0025</span></td>
+                      <td>
+                        <div class="patient-avatar-and-name">
+                          <img src="./images/doctor 1.jpg" alt="Patient 3" />
+                          <p>Marcus Johnson</p>
+                        </div>
+                      </td>
+                      <td>55</td>
+                      <td>03/11/1968</td>
+                      <td>Chest Pain</td>
+                      <td><span class="badge emergency">Emergency</span></td>
+                    </tr>
+                    <tr>
+                      <td><span class="patient-id">P0026</span></td>
+                      <td>
+                        <div class="patient-avatar-and-name">
+                          <img src="./images/doctor 5.jpg" alt="Patient 4" />
+                          <p>Sarah Williams</p>
+                        </div>
+                      </td>
+                      <td>41</td>
+                      <td>15/02/1983</td>
+                      <td>Flu</td>
+                      <td><span class="badge non-urgent">Non Urgent</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
           </div>
         </div>
       </div>
