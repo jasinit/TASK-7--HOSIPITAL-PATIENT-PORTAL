@@ -64,8 +64,10 @@ body {
 
 .logo-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  column-gap: 10px;
   padding: 1.5rem;
   border-bottom: 1px solid var(--border-color);
 }
@@ -328,7 +330,11 @@ body {
   right: -10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
   border-radius: 50%;
   pointer-events: none;
 }
@@ -728,6 +734,7 @@ th {
   font-weight: 600;
   border-bottom: 1px solid var(--border-color);
   background-color: #fafafa;
+  white-space: nowrap;
 }
 
 td {
@@ -735,6 +742,7 @@ td {
   font-size: 0.9rem;
   border-bottom: 1px solid var(--border-color);
   vertical-align: middle;
+  white-space: nowrap;
 }
 
 tbody tr {
@@ -773,12 +781,15 @@ input[type="checkbox"] {
   height: 18px;
   accent-color: var(--primary-color);
   cursor: pointer;
+  vertical-align: middle;
+  margin: 0;
 }
 
 td label {
   margin-left: 8px;
   font-weight: 500;
   cursor: pointer;
+  vertical-align: middle;
 }
 
 .patient-id {
@@ -797,14 +808,32 @@ td button {
 }
 
 /* Disease Tags */
-td button:contains("Fracture") {
+td button.fracture {
   background-color: #ffe4e6;
   color: #be123c;
 }
-td button:contains("Fever") {
+
+.action-col {
+  text-align: center;
+}
+
+.action-icon {
+  color: var(--text-light);
+  cursor: pointer;
+  transition: color 0.2s;
+  font-size: 1.3rem;
+  vertical-align: middle;
+}
+
+.action-icon:hover {
+  color: var(--primary-color);
+}
+
+td button.fever {
   background-color: #fef08a;
   color: #854d0e;
 }
+
 /* Generic */
 td button {
   background-color: #e0e7ff;
